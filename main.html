@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>Профи Инвест</title>
+    <meta name="description" content="Описание страницы сайта. Описание страницы сайта." />
+    <link rel="preconnect" href="//api-maps.yandex.ru" />
+    <link rel="dns-prefetch" href="//api-maps.yandex.ru" />
+    <link rel="preload" href="fonts/MuseoCyrl-100.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/MuseoCyrl-300.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/MuseoCyrl-500.woff2" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="fonts/MuseoCyrl-700.woff2" as="font" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body class="layout js-layout">
+    <header class="header js-header">
+        <div class="header__container">
+            <div class="header__logo"><a href="#"><span class="visually-hidden">Логотип Профи-инвест</span><svg width="174" height="56" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#profi-invest"></use>
+                    </svg></a></div><button class="header__toggle js-menu-toggle" type="button" aria-label="Главное меню"><span></span></button>
+            <div class="header__wrapper">
+                <div class="header__contacts"><button type="button"><svg width="19" height="18" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#call"></use>
+                        </svg><span>Обратный звонок</span></button><a class="roistat-phone-tel" href="tel:+74951910951" id="phone_head"><svg width="18" height="20" aria-hidden="true">
+                            <use xlink:href="img/sprite.svg#call-filled"></use>
+                        </svg><span class="roistat-phone-tel">+7 (495) 191-09-51</span></a></div>
+                <nav>
+                    <ul class="header__menu">
+                        <li class="header__item header__item--active">
+                            <p>Квартиры<span>1 213</span></p>
+                        </li>
+                        <li class="header__item"><a href="#">Коммерческая недвижимость</a></li>
+                        <li class="header__item"><a href="#">Новости</a></li>
+                        <li class="header__item"><a href="#">О компании</a></li>
+                        <li class="header__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__bottom">
+                    <ul class="header__socials">
+                        <li><a href="#"><svg width="26" height="26" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#vk"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg width="26" height="26" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg></a></li>
+                        <li><a href="#"><svg width="26" height="26" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg></a></li>
+                    </ul>
+                    <div class="header__bottom-link"><a href="#">Проектные декларации размещены на сайте наш.дом.рф</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-page">
+        <h1 class="visually-hidden">Профи-инвест</h1>
+        <section class="main-page__about">
+            <h2 class="visually-hidden">О компании</h2>
+            <ul>
+                <li class="profit-card profit-card--vertical">
+                    <picture><img class="lazy-img" data-src="img/icon-3@1x.png" data-srcset="img/icon-3@2x.png 2x" width="69" height="69" alt="Наши преимущества"></picture>
+                    <p><b>15 000</b>квартир заселено</p>
+                </li>
+                <li class="profit-card profit-card--inside">
+                    <picture><img class="lazy-img" data-src="img/icon-1@1x.png" data-srcset="img/icon-1@2x.png 2x" width="69" height="69" alt="Наши преимущества"></picture>
+                    <p>более <b>13</b> лет на рынке</p>
+                </li>
+                <li class="profit-card profit-card--columns">
+                    <picture><img class="lazy-img" data-src="img/icon-2@1x.png" data-srcset="img/icon-2@2x.png 2x" width="69" height="69" alt="Наши преимущества"></picture>
+                    <p><b>25</b> построенных объектов</p>
+                </li>
+            </ul>
+            <div class="main-page__toggle-wrapper">
+                <div class="main-page__toggle"><button class="js-map-toggle" type="button" aria-label="Переключение между отображением списком и картой"></button><span>Списком</span><span>На карте</span></div>
+            </div>
+        </section>
+        <section class="main-page__projects js-main-projects">
+            <h2 class="visually-hidden">Наши проекты</h2>
+            <div class="main-page__projects-list js-main-projects-list js-main-projects-map">
+                <div class="swiper-container swiper1">
+                    <ul class="swiper-wrapper main-page__desk">
+                        <li class="project-card project-card--red-left swiper-slide js-map-card" data-index="0">
+                            <div class="project-card__image">
+                                <picture><img class="lazy-img" data-src="img/project-1@1x.jpg" data-srcset="img/project-1@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв"></picture>
+                            </div>
+                            <div class="project-card__slider">
+                                <div class="swiper-container swiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide project-card__slide">
+                                            <picture><img class="lazy-img" data-src="img/project-1@1x.jpg" data-srcset="img/project-1@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв"></picture>
+                                            <p class="project-card__slogan"></p>
+                                        </div>
+                                        <div class="swiper-slide project-card__slide">
+                                            <picture><img class="lazy-img" data-src="img/project-1-1@1x.jpg" data-srcset="img/project-1-1@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв"></picture>
+                                            <p class="project-card__slogan">От 17 909 рублей<br/>в месяц</p>
+                                        </div>
+                                        <div class="swiper-slide project-card__slide">
+                                            <picture><img class="lazy-img" data-src="img/project-1-2@1x.jpg" data-srcset="img/project-1-2@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв"></picture>
+                                            <p class="project-card__slogan">Высокие потолки и панорамное остекление</p>
+                                        </div>
+                                        <div class="swiper-slide project-card__slide">
+                                            <picture><img class="lazy-img" data-src="img/project-1-3@1x.jpg" data-srcset="img/project-1-3@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв"></picture>
+                                            <p class="project-card__slogan">5 минут до<br/>ж/д станции</p>
+                                        </div>
+                                        <div class="swiper-slide project-card__slide">
+                                            <picture><img class="lazy-img" data-src="img/project-1@1x.jpg" data-srcset="img/project-1@2x.jpg 2x" width="529" height="331" alt="ЖК Ривер Парк, г. Королёв">
+                                                <p class="project-card__slogan"></p>
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-card__text"><a class="js-project-link" href="#">
+                                    <h3>ЖК Ривер Парк, г. Королёв</h3>
+                                </a>
+                                <p>От 2,01 млн. рублей</p>
+                                <div class="project-card__promo"><span>Старт продаж ЖД №5</span></div>
+                                <div class="project-card__promo-2"><span>ЖД №5 - повышение цен с 01.02.2020</span></div><button class="project-card__button-map" type="button">Показать на карте<svg width="11" height="10" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                    </svg></button>
+                            </div><button class="project-card__button" type="button"></button>
+                        </li>
+                        <li class="project-card swiper-slide js-map-card" data-index="1">
+                            <div class="project-card__image">
+                                <picture><img class="lazy-img" data-src="img/project-2@1x.jpg" data-srcset="img/project-2@2x.jpg 2x" width="529" height="331" alt="ЖК 31 Квартал, 2-я очередь, г. Пушкино"></picture>
+                            </div>
+                            <div class="project-card__text"><a class="js-project-link" href="#">
+                                    <h3>ЖК 31 Квартал, 2-я очередь, г. Пушкино</h3>
+                                </a>
+                                <p>От 2,25 млн. рублей</p>
+                                <div class="project-card__promo"><span></span></div>
+                                <div class="project-card__promo-2"><span>Повышение цен с 01.03.2020 квартиры с отделкой! теплый паркинг</span></div><button class="project-card__button-map" type="button">Показать на карте<svg width="11" height="10" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                    </svg></button>
+                            </div>
+                        </li>
+                        <li class="project-card project-card--yellow-right swiper-slide js-map-card" data-index="2">
+                            <div class="project-card__image">
+                                <picture><img class="lazy-img" data-src="img/project-3@1x.jpg" data-srcset="img/project-3@2x.jpg 2x" width="529" height="331" alt="ЖК тургенева, 3-я очередь, г.Пушкино"></picture>
+                            </div>
+                            <div class="project-card__text"><a class="js-project-link" href="#">
+                                    <h3>ЖК тургенева, 3-я очередь, г.Пушкино</h3>
+                                </a>
+                                <p>От 2,78 млн. рублей</p>
+                                <div class="project-card__promo"><span>Дом сдан</span></div>
+                                <div class="project-card__promo-2"><span></span></div><button class="project-card__button-map" type="button">Показать на карте<svg width="11" height="10" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                    </svg></button>
+                            </div>
+                        </li>
+                        <li class="project-card project-card--yellow-left swiper-slide js-map-card" data-index="3">
+                            <div class="project-card__image">
+                                <picture><img class="lazy-img" data-src="img/project-4@1x.jpg" data-srcset="img/project-4@2x.jpg 2x" width="529" height="331" alt="ЖК на Тургенева 13 в г. Пушкино"></picture>
+                            </div>
+                            <div class="project-card__text"><a class="js-project-link" href="#">
+                                    <h3>ЖК на Тургенева 13 в г. Пушкино</h3>
+                                </a>
+                                <p>От 3,1 млн. рублей</p>
+                                <div class="project-card__promo"><span>Скидка на кладовки</span></div>
+                                <div class="project-card__promo-2"><span></span></div><button class="project-card__button-map" type="button">Показать на карте<svg width="11" height="10" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                    </svg></button>
+                            </div>
+                        </li>
+                        <li class="project-card project-card--yellow-right project-card--big swiper-slide js-map-card" data-index="4">
+                            <div class="project-card__image">
+                                <picture><img class="lazy-img" data-src="img/project-5@1x.jpg" data-srcset="img/project-5@2x.jpg 2x" width="529" height="331" alt="Жилой дом на Писаревской 5 в г. Пушкино"></picture>
+                            </div>
+                            <div class="project-card__text"><a class="js-project-link" href="#">
+                                    <h3>Жилой дом на Писаревской 5 в г. Пушкино</h3>
+                                </a>
+                                <p>Квартиры от 3,5 млн. рублей</p>
+                                <div class="project-card__promo"><span>Дом сдан</span></div>
+                                <div class="project-card__promo-2"><span></span></div><button class="project-card__button-map" type="button">Показать на карте<svg width="11" height="10" aria-hidden="true">
+                                        <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                    </svg></button>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="main-page__map-wrapper js-main-map-wrapper" id="main-page-map"></div>
+            </div>
+        </section>
+        <section class="main-page__news news js-news">
+            <h2>Новости</h2>
+            <div class="swiper-container">
+                <ul class="swiper-wrapper">
+                    <li class="news-card swiper-slide"><a href="#">
+                            <picture><img class="lazy-img" data-src="img/stock-bg-1@1x.jpg" data-srcset="img/stock-bg-1@2x.jpg 2x" width="270" height="170" alt="Ипотека от 6,5% годовых стартует в проектах компании Профи-Инвест"></picture>
+                            <h3>Ипотека от 6,5% годовых стартует в проектах компании Профи-Инвест</h3>
+                        </a>
+                        <p>Компания Профи-Инвест сообщает о старте специального предложения на квартиры в проектах Ривер Парк, 31 Квартал, Добролюбова 32. Только с 18 октября до 31 декабря 2019 года покупатели могут воспользоваться ипотечной программой с государственной поддержкой со ставкой в 6,5% от Сбербанка.<a href="#">Подробнее<svg width="11" height="10" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                </svg></a></p><time datetime="2019-10-19">19 октября 2019</time>
+                    </li>
+                    <li class="news-card swiper-slide"><a href="#">
+                            <picture><img class="lazy-img" data-src="img/stock-bg-2@1x.jpg" data-srcset="img/stock-bg-2@2x.jpg 2x" width="270" height="170" alt="Профи Инвест запускает программу лояльности Profi Club для клиентов"></picture>
+                            <h3>Профи Инвест запускает программу лояльности Profi Club для клиентов</h3>
+                        </a>
+                        <p>Стартовала программа лояльности для клиентов – покупателей квартир и апартаментов в проектах компании. Члены Profi Club будут первыми узнавать о специальных предложениях и старте продаж в новых объектах Профи Инвест, а также получат скидки при переезде, ремонте, страховании или использовании медицинских услуг.<a href="#">Подробнее<svg width="11" height="10" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                </svg></a></p><time datetime="2019-10-19">10 октября 2019</time>
+                    </li>
+                    <li class="news-card swiper-slide"><a href="#">
+                            <picture><img class="lazy-img" data-src="img/stock-bg-3@1x.jpg" data-srcset="img/stock-bg-3@2x.jpg 2x" width="270" height="170" alt="Профи Инвест посадила деревья в Московской области"></picture>
+                            <h3>Профи Инвест посадила деревья в Московской области</h3>
+                        </a>
+                        <p>Сотрудники Профи Инвест, совместно с представителями других строительных компаний – членов Ассоциации застройщиков Московской области, приняли участие в масштабной экологической акции «Наш лес. Посади свое дерево», высадив деревья на площадке в Пушкино в Московской области.<a href="#">Подробнее<svg width="11" height="10" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#right-arrow"></use>
+                                </svg></a></p><time datetime="2019-10-19">20 октября 2019</time>
+                    </li>
+                </ul>
+            </div><a class="button" href="#">Все новости</a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper footer__wrapper--top">
+            <div class="footer__logo"><a href="#"><span class="visually-hidden">Логотип Профи-инвест</span><svg width="154" height="50" aria-hidden="true">
+                        <use xlink:href="img/sprite.svg#profi-invest"></use>
+                    </svg></a></div>
+            <div class="footer__column">
+                <div class="footer__nav-wrapper">
+                    <ul class="footer__nav footer__nav--about">
+                        <li><a href="#">О компании</a></li>
+                        <li><a class="footer__link-sub" href="#">Сданные объекты</a></li>
+                        <li><a class="footer__link-sub" href="#">Социальные объекты</a></li>
+                        <li><a class="footer__link-sub" href="#">Партнёры</a></li>
+                    </ul>
+                    <ul class="footer__nav">
+                        <li><a href="#">Жилые комплексы</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Коммерческая недвижимость</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts">
+                    <ul class="footer__socials">
+                        <li><a href="#"><span class="visually-hidden">Профи-инвест в Вконтакте</span><svg width="30" height="30" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#vk"></use>
+                                </svg></a></li>
+                        <li><a href="#"><span class="visually-hidden">Профи-инвест в Фэйсбук</span><svg width="30" height="30" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#facebook"></use>
+                                </svg></a></li>
+                        <li><a href="#"><span class="visually-hidden">Профи-инвест в Инстаграм</span><svg width="30" height="30" aria-hidden="true">
+                                    <use xlink:href="img/sprite.svg#instagram"></use>
+                                </svg></a></li>
+                    </ul>
+                    <div class="footer__phone"><a href="tel:+75555555555">+7 (555) 55-55-55</a><button type="button">Заказать обратный звонок</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__wrapper">
+            <div class="footer__copyright">
+                <p>2019 © Профи Инвест</p>
+            </div>
+            <p>Все права защищены. Использование материалов сайта возможно с разрешения правообладателя.</p>
+            <p>Любая информация, представленная на данном сайте, в том числе (но не ограничиваясь) касающаяся характеристик, планировок, наличия, стоимости объектов, а также упоминание об акциях и скидках, носит исключительно информационный характер и ни при каких условиях не является публичной офертой согласно ст.437 ГК РФ.</p>
+            <p>Сайт компании ПРОФИ-ИНВЕСТ внесен в реестр операторов, осуществляющих обработку персональных данных за номером 77-18-009428, основание внесения Приказ №18 от 19.01.2018 г.</p>
+            <div class="footer__links">
+                <div class="footer__link"><a href="#">Проектные декларации размещены на сайте наш.дом.рф</a></div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=72ec0c32-65bc-4956-aacd-872b0a9b0a38"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
